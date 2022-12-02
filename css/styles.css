@@ -1,0 +1,190 @@
+/* Не знаю, чи потрібно було все форматування обнуляти перед початком роботи, тому захайдив цю частину.  */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+:root {
+    --primary-text-color: rgba(255, 255, 255, 1);
+    --iris-color: rgba(77, 90, 229, 1);
+    --navy-blue-color: rgba(46, 47, 66, 1);
+    --slate-color: rgba(67, 68, 85, 1);
+    --cloud-color: rgba(244, 244, 253, 1);
+    --cornflower-color: rgba(231, 233, 252, 1);
+}
+
+.body {
+    color: var(--navy-blue-color);
+    background-color: #ffffff;
+
+    font-family: Roboto, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.logo-one,
+.link,
+.contact-link {
+    text-decoration: none;
+}
+
+.logo-one {
+    font-family: Raleway, sans-serif;
+    color: var(--iris-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: left;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.page-header .logo-two {
+    color: var(--navy-blue-color);
+}
+
+.site-nav .link {
+    color: var(--navy-blue-color);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--slate-color);
+}
+
+.site-nav .link:active {
+    color: var(--iris-color);
+}
+
+.support .contact-link {
+    color: var(--slate-color);
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+
+.support .contact-link:hover,
+.support .contact-link:focus,
+.support .contact-link:active {
+    color: var(--iris-color);
+}
+
+.hero {
+    background-color: var(--navy-blue-color);
+    color: var(--primary-text-color);
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.button {
+    cursor: pointer;
+    
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+.hero .button {
+    background-color: var(--iris-color);
+    color: var(--primary-text-color);
+
+    line-height: 1.19;
+    text-align: left;
+}
+
+.hero .button:hover,
+.hero .button:focus {
+    background-color: var(--iris-color);
+}
+
+.hero .button:active {
+    background-color: rgba(64, 75, 191, 1);
+}
+
+.filter .button {
+    background-color: var(--cloud-color);
+    background-color: var(--cornflower-color);
+    color: var(--iris-color);
+
+    line-height: 1.5;
+    text-align: center;
+}
+
+.filter .button:hover,
+.filter .button:focus,
+.filter .button:active {
+    background-color: var(--iris-color);
+    color: var(--primary-text-color);
+}
+
+.section {
+    background-color: var(--cloud-color);
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.section-item {
+    background-color: var(--primary-text-color);
+}
+
+.section-item .subject {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+
+.section-item .text {
+    color: var(--slate-color);
+
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+
+/* Я додав ще відцентрування в ПІБ та посадах в секції Our team, бо в Figma по ним зазначено: "Align: Center".
+Якщо на даному етапі це не потрібно - я видалю. */
+.section-item .center {
+    text-align: center;
+}
+
+.page-footer {
+    background-color: var(--navy-blue-color);
+}
+
+.page-footer .logo-two {
+    color: var(--cloud-color);
+}
+
+.page-footer .text {
+    color: var(--cornflower-color);
+    
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
