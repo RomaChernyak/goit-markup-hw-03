@@ -31,18 +31,20 @@
     list-style: none;
 }
 
-.logo-one,
+.logo,
 .link,
 .contact-link {
     text-decoration: none;
 }
 
-.logo-one {
-    display: inline-flex;
+.logo {
+    display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
     
     font-family: Raleway, sans-serif;
-    color: var(--iris-color);
+    color: var(--navy-blue-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
@@ -51,12 +53,15 @@
     text-transform: uppercase;
 }
 
-.page-header {
+.page-header {    
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.page-header .logo-two {
-    color: var(--navy-blue-color);
+.page-header .web-part {
+    display: flex;
+    align-items: center;
+    
+    color: var(--iris-color);
 }
 
 .page-header .container {
@@ -108,6 +113,10 @@
 }
 
 .support .contact-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
     color: var(--slate-color);
     line-height: 1.5;
     text-align: left;
@@ -125,19 +134,16 @@
     color: var(--primary-text-color);
 
     text-align: center;
-}
-
-.hero > .container {
     padding-top: 192px;
     padding-bottom: 192px;
 }
 
-.section>.container {
+.section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.products>.container {
+.products {
     padding-top: 0;
 }
 
@@ -306,15 +312,20 @@
 
 .page-footer {
     background-color: var(--navy-blue-color);
-}
 
-.page-footer .container {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.page-footer .logo-two {
+.page-footer .logo {
     color: var(--cloud-color);
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.page-footer .web-part {
+    color: var(--iris-color);
 }
 
 .page-footer .text {
@@ -351,7 +362,7 @@
 }
 
 .portfolio-cards_item {
-    flex-basis: calc((100%-2*24px)/3);
+    flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-cards_item:nth-child(3n) {
@@ -361,18 +372,20 @@
 .portfolio-cards_box {
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    width: 360px;
 
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
-.portfolio-cards_item .img {
+.img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.contacts .container {
+.contacts {
     padding-top: 24px;
     padding-right: auto;
     padding-bottom: 96px;
