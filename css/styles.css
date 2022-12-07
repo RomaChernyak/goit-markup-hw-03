@@ -354,7 +354,7 @@
     flex-basis: calc((100%-2*24px)/3);
 }
 
-.portfolio-btn_item:nth-child(3n) {
+.portfolio-cards_item:nth-child(3n) {
     margin-right: 0;
 }
 
