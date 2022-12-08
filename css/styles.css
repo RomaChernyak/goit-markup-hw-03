@@ -95,10 +95,7 @@
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--slate-color);
-}
-
+.site-nav .link:focus,
 .site-nav .link:active {
     color: var(--iris-color);
 }
